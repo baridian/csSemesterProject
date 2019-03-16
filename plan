@@ -1,0 +1,29 @@
+main class
+dependencies:
+    webScraper
+    irc
+
+function: run program. Scrapes reddit once per minute and checks irc for inputs.
+
+webScraper
+dependencies:
+    array of search nodes
+    rest api
+    json parser
+
+function: when called, go through list of subreddits, searching for associated regular expression(s).
+If successful, search that page's comments for different regular expressions.
+has create, remove and edit node functions.
+
+searchNode
+dependencies:
+    serializable
+
+function: store subreddit, main page regular expressions and sub page regular expressions.
+
+
+irc dependencies:
+    irc library
+
+function: has scanf and printf functions. Self explanatory.
+
